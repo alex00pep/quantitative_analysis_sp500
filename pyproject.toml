@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "quantitative-analysis-sp500"
+version = "0.1.0"
+description = ""
+authors = ["alex00pep <alexmtnezf@gmail.com>"]
+license = "GPL"
+readme = "README.md"
+packages = [{include = "quantitative_analysis_sp500"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.24.3"
+pandas = "^2.0.2"
+matplotlib = "^3.7.1"
+ipykernel = "^6.23.2"
+yfinance = "^0.2.20"
+pandas-datareader = "^0.10.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
