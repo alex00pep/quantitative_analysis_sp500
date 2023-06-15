@@ -8,7 +8,7 @@ readme = "README.md"
 packages = [{include = "quantitative_analysis_sp500"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 numpy = "^1.24.3"
 pandas = "^2.0.2"
 matplotlib = "^3.7.1"
@@ -17,6 +17,8 @@ yfinance = "^0.2.20"
 pandas-datareader = "^0.10.0"
 jupyter = "^1.0.0"
 plotly = "^5.15.0"
+jupyterlab = "^4.0.2"
+scipy = "^1.10.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.3.2"
